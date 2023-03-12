@@ -67,7 +67,7 @@ body {
     color: rgb(117, 117, 117);
 }
 /* ***************************************************************************************************************************************************************************** */
-
+/* HERO*/
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -103,6 +103,10 @@ body {
     margin-left: 100px;
 }
 
+.titulo-responsive {
+    display: none;
+}
+
 .cambio-de-palabra {
     font-size: 60px;
     transition: transform 0.3s ease;
@@ -121,6 +125,9 @@ body {
     font-family: "Source Code Pro", monospace;
     color: white;
     margin-left: 100px;
+}
+.parrafoHero2 {
+    display: none;
 }
 .buttons {
     margin-top: 100px;
@@ -190,6 +197,7 @@ button:active {
 }
 
 /****************************************************************************************/
+/* SECTION ABOUT ME */
 .aboutMe {
     width: 100vw;
     height: auto;
@@ -254,7 +262,6 @@ button:active {
     padding: 10px;
     font-family: "Raleway", sans-serif;
 }
-/* ********************************************************************************* */
 
 .tecnologiasContenedor {
     width: 100vw;
@@ -296,6 +303,7 @@ button:active {
 }
 
 /* *************************************************************************************************** */
+/*SECTION PROYECTOS*/
 .projects {
     width: 100vw;
     height: auto;
@@ -349,6 +357,7 @@ button:active {
 .cardWork img {
     width: auto;
     height: 100%;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
 }
 
 .cardWork p {
@@ -359,7 +368,7 @@ button:active {
 }
 
 /* *************************************************************************** */
-
+/*SECTION CONTACTO */
 .contacto {
     width: 100vw;
     height: 100vh;
@@ -388,9 +397,8 @@ input {
     border: 1px solid #aaa;
     border-radius: 2px;
     padding: 1.5em 1em 0.8em 1em;
-
     background: transparent;
-    color: #ff0202;
+    color: #3b3b3b;
 }
 
 input:focus {
@@ -401,7 +409,7 @@ input:focus {
 input + label {
     display: block;
     cursor: text;
-    color: #777;
+    color: #ebe3e3;
     transition: 0.15s ease-out all;
     position: absolute;
     top: 40%;
@@ -414,18 +422,17 @@ label.stay {
     left: 3em;
     font-weight: bold;
     font-size: 0.7em;
-    color: #ff0000;
+    color: #ffffff;
     transition: 0.15s ease-out all;
 }
 
 textarea {
     font-size: 1.2em;
-    width: 100%;
+    width: 101%;
     height: 200px;
     border: 1px solid #aaa;
     border-radius: 2px;
     padding: 2.5em 1em 0.8em 1em;
-
     background: transparent;
     outline: none;
     color: #777;
@@ -453,7 +460,7 @@ label.stay {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 0.7em;
-    color: #fa0909;
+    color: #fcfbfb;
     transition: 0.15s ease-out all;
 }
 
@@ -493,11 +500,13 @@ label.stay {
     height: 100px;
     display: flex;
     flex-direction: column;
+    transition: filter 0.3s ease-in-out;
 }
 
 .imgSocial:hover {
     transform: scale(1.3);
     transition: transform 0.3s ease-in-out;
+    filter: drop-shadow(10px 10px 80px rgba(255, 255, 255, 0.15));
 }
 
 .containerSYF {
@@ -505,4 +514,279 @@ label.stay {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/* ***************************************************************************** */
+
+/* Para dispositivos móviles pequeños (por ejemplo, iPhone 5) */
+@media (max-width: 480px) {
+    body {
+        background-color: #3a3a3a;
+        background-image: none;
+        width: 100vw;
+    }
+    /*Primer SECTION*/
+    .hero {
+        margin-top: 100px;
+        width: 100vw;
+        margin: 0;
+    }
+    .hero__content {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__content2 {
+        display: none;
+    }
+    .hero__content h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: #fff;
+        font-family: "Source Code Pro", monospace;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    .parrafoHero {
+        display: none;
+    }
+    .parrafoHero2 {
+        font-size: 20px;
+        width: 60%;
+        height: 100%;
+        font-family: "Source Code Pro", monospace;
+        color: white;
+        margin-bottom: 100px;
+        margin-left: 10px;
+    }
+    .cambio-de-palabra {
+        font-size: 30px;
+        transition: transform 0.3s ease;
+        font-family: "Source Code Pro", monospace;
+        margin-left: 10px;
+    }
+    .cambio-de-palabra.hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+    }
+    .buttons {
+        margin-top: -500px;
+        margin-left: 10px;
+    }
+
+    /********************************************************************************** */
+    /*segunda SECTION */
+    .aboutMe {
+        width: 100vw;
+        height: auto;
+    }
+
+    .aboutMe h3 {
+        color: white;
+        text-align: start;
+        font-size: 40px;
+        margin-bottom: 100px;
+        font-family: "Source Code Pro", monospace;
+        font-weight: 100;
+        margin-left: 10px;
+    }
+    .cardsContainer {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 220px 220px;
+        grid-template-rows: repeat(3, 300px);
+        justify-content: start;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 90px;
+        margin-left: 15px;
+    }
+    .cards {
+        width: 220px;
+        height: 300px;
+        background-color: #202020;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: box-shadow 0.3s ease-in-out;
+        padding-top: 10px;
+    }
+
+    .cards:hover {
+        box-shadow: 10px 10px 80px rgba(255, 255, 255, 0.15);
+    }
+
+    .tituloCards {
+        font-family: "Source Code Pro", monospace;
+        text-align: center;
+        font-size: 1.5em;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
+    }
+    .cards img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .cards p {
+        color: rgb(105, 105, 105);
+        text-align: center;
+        font-size: 0.8em;
+        padding: 3px;
+        font-family: "Raleway", sans-serif;
+    }
+    .tecnologiasContenedor {
+        width: 100vw;
+        height: 80vh;
+        margin-left: 35px;
+        display: flex;
+        justify-content: center;
+        color: rgb(105, 105, 105);
+        text-align: start;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .cardTecnologia {
+        width: 1000px;
+        height: 500px;
+        background-color: #202020;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 50px 0px 50px;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .cardTecnologia:hover {
+        box-shadow: 10px 10px 80px rgba(255, 255, 255, 0.15);
+    }
+    .projects {
+        width: 100vw;
+        height: auto;
+        margin-bottom: 200px;
+    }
+    .projects h3 {
+        color: white;
+        text-align: start;
+        font-size: 40px;
+        margin-bottom: 100px;
+        font-family: "Source Code Pro", monospace;
+        font-weight: 100;
+        margin-left: 10px;
+    }
+
+    .cardWork {
+        width: 400px;
+        height: 400px;
+        background-color: #202020;
+        border-radius: 5px;
+        transition: box-shadow 0.3s ease-in-out;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardWork:hover {
+        box-shadow: 10px 10px 80px rgba(255, 255, 255, 0.15);
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    .cards2Container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .cards2Container .cardWork:first-child {
+        margin-left: 30px;
+    }
+
+    .cards2Container .cardWork:nth-child(2) {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards2Container .cardWork:last-child {
+        margin-left: 30px;
+    }
+
+    .cardWork img {
+        width: auto;
+        height: 100%;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    }
+
+    .cardWork p {
+        font-family: "Raleway", sans-serif;
+        color: white;
+        padding-left: 10px;
+        font-size: small;
+    }
+
+    /* ******************************************************************************** */
+    /*tercera SECTION */
+    .contacto h3 {
+        color: white;
+        text-align: start;
+        font-size: 40px;
+        margin-bottom: 100px;
+        font-family: "Source Code Pro", monospace;
+        font-weight: 100;
+        margin-left: 10px;
+    }
+    .imgSocial {
+        width: 50px;
+        height: 5 0px;
+        display: flex;
+        flex-direction: column;
+        transition: filter 0.3s ease-in-out;
+    }
+
+    .imgSocial:hover {
+        transform: scale(1.3);
+        transition: transform 0.3s ease-in-out;
+        filter: drop-shadow(10px 10px 80px rgba(255, 255, 255, 0.15));
+    }
+
+    .containerSYF {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .containerSocial {
+        display: flex;
+        flex-direction: row;
+        margin-left: 115px;
+    }
+    .formContainer {
+        width: 90%;
+    }
+    #form {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+/* Para dispositivos móviles medianos (por ejemplo, iPhone 6/7/8) */
+@media (max-width: 767px) {
+    /* Estilos para dispositivos móviles medianos */
+}
+
+/* Para dispositivos móviles grandes (por ejemplo, iPad) */
+@media (max-width: 1024px) {
+    /* Estilos para dispositivos móviles grandes */
+}
+
+/* Para dispositivos móviles muy grandes (por ejemplo, tabletas grandes y computadoras portátiles) */
+@media (min-width: 1025px) {
+    /* Estilos para dispositivos móviles muy grandes */
 }
