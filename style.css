@@ -552,7 +552,7 @@ label.stay {
 
     .hero__content {
         width: 100vw;
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-direction: column;
     }
@@ -656,10 +656,11 @@ label.stay {
         font-size: 0.7em;
         padding: 3px;
         font-family: "Raleway", sans-serif;
+        margin: 0;
     }
     .tecnologiasContenedor {
         width: 100vw;
-        height: 80vh;
+        height: auto;
         display: flex;
         justify-content: start;
         color: rgb(105, 105, 105);
@@ -669,11 +670,11 @@ label.stay {
 
     .cardTecnologia {
         width: 350px;
-        height: 250px;
+        height: 350px;
         background-color: #202020;
         border-radius: 5px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         padding: 0px 10px 0px 10px;
