@@ -521,16 +521,35 @@ label.stay {
 /* Para dispositivos móviles pequeños (por ejemplo, iPhone 5) */
 @media (max-width: 480px) {
     body {
-        background-color: #3a3a3a;
+        background-color: #272727;
         background-image: none;
         width: 100vw;
     }
-    /*Primer SECTION*/
-    .hero {
-        margin-top: 100px;
+
+    .navbar {
         width: 100vw;
+        height: 50px;
+        position: fixed;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background-color: transparent;
+        transition: background-color 0.5s ease;
+        z-index: 5;
         margin: 0;
     }
+    .links {
+        color: rgb(253, 253, 253);
+        text-decoration: none;
+        font-size: 0.8em;
+        padding: 33px;
+        display: inline-block;
+        margin: 0 0.5rem;
+        font-family: "Raleway", sans-serif;
+    }
+    /*Primer SECTION*/
+
     .hero__content {
         width: 100vw;
         height: 100vh;
@@ -551,13 +570,14 @@ label.stay {
     .parrafoHero {
         display: none;
     }
+
     .parrafoHero2 {
-        font-size: 20px;
-        width: 60%;
-        height: 100%;
+        display: block;
+        font-size: 30px;
+        width: 70%;
+        height: auto;
         font-family: "Source Code Pro", monospace;
         color: white;
-        margin-bottom: 100px;
         margin-left: 10px;
     }
     .cambio-de-palabra {
@@ -571,13 +591,14 @@ label.stay {
         transform: translateY(-10px);
     }
     .buttons {
-        margin-top: -500px;
+        margin-top: 0;
         margin-left: 10px;
     }
 
     /********************************************************************************** */
     /*segunda SECTION */
     .aboutMe {
+        margin-top: 100px;
         width: 100vw;
         height: auto;
     }
@@ -595,11 +616,10 @@ label.stay {
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: 220px 220px;
-        grid-template-rows: repeat(3, 300px);
-        justify-content: start;
+        grid-template-columns: 220px;
+        grid-template-rows: repeat(6, 300px);
+        justify-content: center;
         align-items: center;
-        gap: 30px;
         margin-bottom: 90px;
         margin-left: 15px;
     }
@@ -616,14 +636,10 @@ label.stay {
         padding-top: 10px;
     }
 
-    .cards:hover {
-        box-shadow: 10px 10px 80px rgba(255, 255, 255, 0.15);
-    }
-
     .tituloCards {
         font-family: "Source Code Pro", monospace;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.3em;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -637,36 +653,38 @@ label.stay {
     .cards p {
         color: rgb(105, 105, 105);
         text-align: center;
-        font-size: 0.8em;
+        font-size: 0.7em;
         padding: 3px;
         font-family: "Raleway", sans-serif;
     }
     .tecnologiasContenedor {
         width: 100vw;
         height: 80vh;
-        margin-left: 35px;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         color: rgb(105, 105, 105);
-        text-align: start;
         font-family: "Raleway", sans-serif;
     }
 
     .cardTecnologia {
-        width: 1000px;
-        height: 500px;
+        width: 350px;
+        height: 250px;
         background-color: #202020;
         border-radius: 5px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
-        padding: 0px 50px 0px 50px;
+        padding: 0px 10px 0px 10px;
         transition: box-shadow 0.3s ease-in-out;
     }
 
-    .cardTecnologia:hover {
-        box-shadow: 10px 10px 80px rgba(255, 255, 255, 0.15);
+    .parrafoTecnologia {
+        color: rgb(105, 105, 105);
+        text-align: start;
+        font-size: 0.7em;
+        padding: 3px;
+        font-family: "Raleway", sans-serif;
     }
     .projects {
         width: 100vw;
@@ -684,14 +702,15 @@ label.stay {
     }
 
     .cardWork {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         background-color: #202020;
         border-radius: 5px;
         transition: box-shadow 0.3s ease-in-out;
         margin-bottom: 10px;
         display: flex;
         flex-direction: column;
+        padding-bottom: 10px;
     }
 
     .cardWork:hover {
@@ -702,21 +721,25 @@ label.stay {
     .cards2Container {
         display: flex;
         flex-wrap: wrap;
-        gap: 50px;
+        justify-content: center;
+        align-items: center;
     }
 
     .cards2Container .cardWork:first-child {
-        margin-left: 30px;
+        margin-left: 0px;
     }
 
     .cards2Container .cardWork:nth-child(2) {
-        margin-left: 30px;
+        padding-bottom: 10px;
+        width: 300px;
+        height: 300px;
         display: flex;
         flex-direction: column;
+        margin-left: 0px;
     }
 
     .cards2Container .cardWork:last-child {
-        margin-left: 30px;
+        margin-left: 0px;
     }
 
     .cardWork img {
@@ -726,10 +749,15 @@ label.stay {
     }
 
     .cardWork p {
-        font-family: "Raleway", sans-serif;
-        color: white;
-        padding-left: 10px;
-        font-size: small;
+        display: none;
+    }
+
+    .buttonWork a {
+        text-decoration: underline;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: "Source Code Pro", monospace;
     }
 
     /* ******************************************************************************** */
