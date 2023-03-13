@@ -664,6 +664,7 @@ label.stay {
         justify-content: start;
         color: rgb(105, 105, 105);
         font-family: "Raleway", sans-serif;
+        margin-left: 30px;
     }
 
     .cardTecnologia {
