@@ -524,6 +524,7 @@ label.stay {
         background-color: #272727;
         background-image: none;
         width: 100vw;
+        overflow-y: hidden;
     }
 
     .navbar {
@@ -552,11 +553,11 @@ label.stay {
 
     .hero {
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         padding: 10px;
     }
     .hero__content {
-        width: 100vw;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -566,7 +567,6 @@ label.stay {
     }
     .hero__content h1 {
         font-size: 50px;
-        margin-bottom: 0px;
         color: #fff;
         font-family: "Source Code Pro", monospace;
         margin-top: 10px;
@@ -662,7 +662,7 @@ label.stay {
         font-family: "Raleway", sans-serif;
         margin: 0;
     }
-     .tecnologiasContenedor {
+    .tecnologiasContenedor {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -682,6 +682,7 @@ label.stay {
         margin: 0px 10px 0px 10px;
         transition: box-shadow 0.3s ease-in-out;
     }
+
     .parrafoTecnologia {
         color: rgb(105, 105, 105);
         text-align: start;
@@ -745,7 +746,7 @@ label.stay {
 
     .cardWork img {
         width: auto;
-        height: 100%;
+        height: auto;
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
     }
 
