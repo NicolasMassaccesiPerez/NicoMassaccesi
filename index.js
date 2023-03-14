@@ -25,7 +25,7 @@ if (h2) {
     
 }
 h2.addEventListener('mouseover', () => {
-    h2.textContent = 'Front-End Developer';
+    h2.textContent = 'Front-End\nDeveloper';
     h2.classList.add('hover');
 });
 h2.addEventListener('mouseout', () => {
