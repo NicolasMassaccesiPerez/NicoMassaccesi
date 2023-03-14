@@ -522,9 +522,7 @@ label.stay {
 @media (max-width: 480px) {
     body {
         background-color: #272727;
-        background-image: none;
         width: 100vw;
-        overflow-x: hidden;
     }
 
     .navbar {
@@ -552,16 +550,13 @@ label.stay {
     /*Primer SECTION*/
 
     .hero {
-        height: 100vh;
         width: 100vw;
-        padding: 10px;
-    }
-    .hero__content {
-        width: 100%;
-        height: auto;
+        padding: 50px 0 100px 0;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
+
     .hero__content2 {
         display: none;
     }
@@ -569,7 +564,6 @@ label.stay {
         font-size: 50px;
         color: #fff;
         font-family: "Source Code Pro", monospace;
-        margin-top: 10px;
         margin-left: 10px;
     }
     .parrafoHero {
@@ -582,15 +576,16 @@ label.stay {
         font-size: 30px;
         font-family: "Source Code Pro", monospace;
         color: white;
+        text-align: center;
     }
     .cambio-de-palabra {
-        line-height: 1.5;
         width: 100%;
+        line-height: 1.5;
         font-size: 40px;
         transition: transform 0.3s ease;
         font-family: "Source Code Pro", monospace;
-        margin-left: 10px;
-        padding: 0;
+        text-align: center;
+        margin: 0;
     }
     .cambio-de-palabra.hover {
         cursor: pointer;
@@ -598,15 +593,13 @@ label.stay {
     }
     .buttons {
         margin-top: 0;
-        margin-left: 10px;
+        margin-left: 50px;
     }
 
     /********************************************************************************** */
     /*segunda SECTION */
     .aboutMe {
-        margin-top: 100px;
         width: 100%;
-        height: auto;
     }
 
     .aboutMe h3 {
