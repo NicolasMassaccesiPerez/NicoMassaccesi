@@ -704,8 +704,7 @@ label.stay {
     }
 
     .cardWork {
-        width: 300px;
-        height: 300px;
+        width: 90%;
         background-color: #202020;
         border-radius: 5px;
         transition: box-shadow 0.3s ease-in-out;
