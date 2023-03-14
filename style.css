@@ -520,6 +520,7 @@ label.stay {
 /* Para dispositivos móviles pequeños (por ejemplo, iPhone 5) */
 @media (max-width: 480px) {
     body {
+        width: 100vw;
         overflow-x: hidden;
     }
 
@@ -545,7 +546,7 @@ label.stay {
     /*Primer SECTION*/
 
     .hero {
-        padding: 50px 0 100px 0;
+        padding: 50px 0 50px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
