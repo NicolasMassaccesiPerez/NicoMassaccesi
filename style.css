@@ -523,6 +523,7 @@ label.stay {
     body {
         background-color: #272727;
         width: 100vw;
+        overflow-x: hidden;
     }
 
     .navbar {
@@ -757,6 +758,11 @@ label.stay {
 
     /* ******************************************************************************** */
     /*tercera SECTION */
+    .contacto {
+        width: 100vw;
+        height: 100vh;
+    }
+
     .contacto h3 {
         color: white;
         text-align: start;
@@ -768,7 +774,7 @@ label.stay {
     }
     .imgSocial {
         width: 50px;
-        height: 5 0px;
+        height: 50px;
         display: flex;
         flex-direction: column;
         transition: filter 0.3s ease-in-out;
@@ -781,22 +787,23 @@ label.stay {
     }
 
     .containerSYF {
-        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: start;
     }
     .containerSocial {
         display: flex;
-        flex-direction: row;
-        margin-left: 115px;
+        justify-content: center;
+        align-items: center;
     }
     .formContainer {
-        width: 90%;
+        width: 100%;
     }
     #form {
-        width: 100%;
+        width: 90%;
         margin-left: 0px;
+    }
+    fieldset {
+        margin: 0;
     }
 }
 /* Para dispositivos móviles medianos (por ejemplo, iPhone 6/7/8) */
@@ -813,3 +820,4 @@ label.stay {
 @media (min-width: 1025px) {
     /* Estilos para dispositivos móviles muy grandes */
 }
+
