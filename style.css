@@ -527,7 +527,6 @@ label.stay {
     }
 
     .navbar {
-        width: 100%;
         height: 50px;
         position: fixed;
         top: 0px;
@@ -551,7 +550,6 @@ label.stay {
     /*Primer SECTION*/
 
     .hero {
-        width: 100vw;
         padding: 50px 0 100px 0;
         display: flex;
         flex-direction: column;
@@ -572,7 +570,6 @@ label.stay {
     }
 
     .parrafoHero2 {
-        width: 100%;
         display: inline-block;
         font-size: 30px;
         font-family: "Source Code Pro", monospace;
@@ -580,7 +577,6 @@ label.stay {
         text-align: center;
     }
     .cambio-de-palabra {
-        width: 100%;
         line-height: 1.5;
         font-size: 40px;
         transition: transform 0.3s ease;
@@ -599,9 +595,6 @@ label.stay {
 
     /********************************************************************************** */
     /*segunda SECTION */
-    .aboutMe {
-        width: 100%;
-    }
 
     .aboutMe h3 {
         color: white;
@@ -613,7 +606,6 @@ label.stay {
         margin-left: 10px;
     }
     .cardsContainer {
-        width: 100%;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(6, auto);
@@ -657,7 +649,6 @@ label.stay {
         margin: 0;
     }
     .tecnologiasContenedor {
-        width: 100%;
         display: flex;
         justify-content: center;
         color: rgb(105, 105, 105);
@@ -665,7 +656,6 @@ label.stay {
     }
 
     .cardTecnologia {
-        width: 100%;
         background-color: #202020;
         border-radius: 5px;
         display: flex;
@@ -685,8 +675,6 @@ label.stay {
         font-family: "Raleway", sans-serif;
     }
     .projects {
-        width: 100%;
-        height: auto;
         margin-bottom: 200px;
     }
     .projects h3 {
@@ -700,7 +688,6 @@ label.stay {
     }
 
     .cardWork {
-        width: 90%;
         height: auto;
         background-color: #202020;
         border-radius: 5px;
@@ -758,10 +745,6 @@ label.stay {
 
     /* ******************************************************************************** */
     /*tercera SECTION */
-    .contacto {
-        width: 100vw;
-        height: 100vh;
-    }
 
     .contacto h3 {
         color: white;
@@ -802,9 +785,6 @@ label.stay {
         width: 90%;
         margin-left: 0px;
     }
-    fieldset {
-        margin: 0;
-    }
 }
 /* Para dispositivos móviles medianos (por ejemplo, iPhone 6/7/8) */
 @media (max-width: 767px) {
@@ -820,4 +800,5 @@ label.stay {
 @media (min-width: 1025px) {
     /* Estilos para dispositivos móviles muy grandes */
 }
+
 
