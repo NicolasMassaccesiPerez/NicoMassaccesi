@@ -542,7 +542,7 @@ label.stay {
     .links {
         color: rgb(253, 253, 253);
         text-decoration: none;
-        font-size: 0.8em;
+        font-size: 0.7em;
         padding: 33px;
         display: inline-block;
         margin: 0 0.5rem;
@@ -566,7 +566,7 @@ label.stay {
     }
     .hero__content h1 {
         font-size: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         color: #fff;
         font-family: "Source Code Pro", monospace;
         margin-top: 10px;
@@ -584,6 +584,7 @@ label.stay {
         color: white;
     }
     .cambio-de-palabra {
+        line-height: 1.5;
         width: 100%;
         font-size: 40px;
         transition: transform 0.3s ease;
