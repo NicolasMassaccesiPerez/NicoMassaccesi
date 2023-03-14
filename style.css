@@ -522,7 +522,7 @@ label.stay {
 @media (max-width: 480px) {
     body {
         background-color: #272727;
-        width: 100vw;
+        width: 100%;
         overflow-x: hidden;
     }
 
@@ -542,9 +542,7 @@ label.stay {
         color: rgb(253, 253, 253);
         text-decoration: none;
         font-size: 0.7em;
-        padding: 33px;
         display: inline-block;
-        margin: 0 0.5rem;
         font-family: "Raleway", sans-serif;
     }
     /*Primer SECTION*/
@@ -783,7 +781,17 @@ label.stay {
     }
     #form {
         width: 90%;
-        margin-left: 0px;
+        margin: 0px;
+    }
+
+    textarea {
+        padding: 0;
+    }
+    input#name {
+        padding: 0;
+    }
+    input#email {
+        padding: 0;
     }
 }
 /* Para dispositivos móviles medianos (por ejemplo, iPhone 6/7/8) */
@@ -800,5 +808,3 @@ label.stay {
 @media (min-width: 1025px) {
     /* Estilos para dispositivos móviles muy grandes */
 }
-
-
