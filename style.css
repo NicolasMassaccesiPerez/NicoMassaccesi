@@ -524,7 +524,7 @@ label.stay {
         background-color: #272727;
         background-image: none;
         width: 100vw;
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .navbar {
