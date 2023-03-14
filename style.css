@@ -682,6 +682,7 @@ label.stay {
     }
 
     .cardWork {
+        width:90%
         height: auto;
         background-color: #202020;
         border-radius: 5px;
