@@ -517,12 +517,9 @@ label.stay {
 }
 
 /* ***************************************************************************** */
-
 /* Para dispositivos móviles pequeños (por ejemplo, iPhone 5) */
 @media (max-width: 480px) {
     body {
-        background-color: #272727;
-        width: 100%;
         overflow-x: hidden;
     }
 
@@ -587,8 +584,8 @@ label.stay {
         transform: translateY(-10px);
     }
     .buttons {
-        margin-top: 0;
-        margin-left: 50px;
+        margin-left: 15%;
+        margin-top: 0px;
     }
 
     /********************************************************************************** */
@@ -600,7 +597,6 @@ label.stay {
         font-size: 40px;
         margin-bottom: 100px;
         font-family: "Source Code Pro", monospace;
-        font-weight: 100;
         margin-left: 10px;
     }
     .cardsContainer {
@@ -612,8 +608,6 @@ label.stay {
         margin-bottom: 90px;
     }
     .cards {
-        width: 220px;
-        height: 300px;
         background-color: #202020;
         border-radius: 5px;
         display: flex;
@@ -759,6 +753,7 @@ label.stay {
         display: flex;
         flex-direction: column;
         transition: filter 0.3s ease-in-out;
+        margin-top: 20px;
     }
 
     .imgSocial:hover {
@@ -768,20 +763,23 @@ label.stay {
     }
 
     .containerSYF {
+        width: 100%;
         display: flex;
         flex-direction: column;
-    }
-    .containerSocial {
-        display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .containerSocial {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .formContainer {
         width: 100%;
     }
     #form {
         width: 90%;
-        margin: 0px;
+        margin: auto;
     }
 
     textarea {
