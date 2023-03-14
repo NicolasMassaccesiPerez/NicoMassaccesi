@@ -683,7 +683,6 @@ label.stay {
 
     .cardWork {
         width:90%
-        height: auto;
         background-color: #202020;
         border-radius: 5px;
         transition: box-shadow 0.3s ease-in-out;
