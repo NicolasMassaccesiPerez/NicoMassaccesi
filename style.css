@@ -662,9 +662,8 @@ label.stay {
         font-family: "Raleway", sans-serif;
         margin: 0;
     }
-    .tecnologiasContenedor {
-        width: auto;
-        height: auto;
+     .tecnologiasContenedor {
+        width: 100%;
         display: flex;
         justify-content: center;
         color: rgb(105, 105, 105);
@@ -672,8 +671,7 @@ label.stay {
     }
 
     .cardTecnologia {
-        width: 350px;
-        height: 350px;
+        width: 100%;
         background-color: #202020;
         border-radius: 5px;
         display: flex;
@@ -681,9 +679,9 @@ label.stay {
         align-items: center;
         flex-direction: column;
         padding: 0px 10px 0px 10px;
+        margin: 0px 10px 0px 10px;
         transition: box-shadow 0.3s ease-in-out;
     }
-
     .parrafoTecnologia {
         color: rgb(105, 105, 105);
         text-align: start;
