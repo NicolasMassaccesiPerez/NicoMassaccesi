@@ -285,8 +285,6 @@ button:active {
 /* *************************************************************************************************** */
 /*SECTION PROYECTOS*/
 .projects {
-    width: 100vw;
-    height: auto;
     margin-bottom: 200px;
 }
 .projects h3 {
@@ -517,7 +515,7 @@ label.stay {
         top: 0px;
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
         background-color: transparent;
         transition: background-color 0.5s ease;
         z-index: 5;
@@ -621,7 +619,7 @@ label.stay {
     }
 
     .projects h3 {
-       font-size: 3em;
+        font-size: 3em;
         margin-left: 10px;
     }
 
@@ -642,6 +640,7 @@ label.stay {
 
     .cards2Container .cardWork:first-child {
         margin-left: 0px;
+        padding-bottom: 10px;
     }
 
     .cards2Container .cardWork:nth-child(2) {
@@ -653,6 +652,7 @@ label.stay {
 
     .cards2Container .cardWork:last-child {
         margin-left: 0px;
+        padding-bottom: 10px;
     }
 
     .cardWork img {
@@ -733,31 +733,450 @@ label.stay {
 
 /* Para dispositivos móviles medianos (por ejemplo, iPhone 6/7/8) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        margin-bottom: 150px;
+    }
+
+    .hero__content {
+        justify-content: center;
+        text-align: center;
+    }
     .hero__content2 {
         display: none;
     }
-
-    .cards {
-        width: 300px;
-        height: 300px;
+    .hero__content h1 {
+        font-size: 3em;
+        color: #fff;
+        font-family: "Source Code Pro", monospace;
+        text-align: center;
+        margin-left: 0;
     }
-    .tituloCards {
-        font-size: 1.3em;
-        margin-bottom: 0;
-        padding: 0px 5px 0px 5px;
-    }
-    .cards img {
+    .parrafoHero {
         display: none;
     }
+
+    .parrafoHero2 {
+        display: flex;
+        font-size: 30px;
+        font-family: "Source Code Pro", monospace;
+        color: white;
+        text-align: center;
+        margin-left: 0;
+    }
+    .cambio-de-palabra {
+        line-height: 1.5;
+        font-size: 40px;
+        transition: transform 0.3s ease;
+        font-family: "Source Code Pro", monospace;
+        text-align: center;
+        margin-left: 0;
+    }
+    .cambio-de-palabra.hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+    }
+    .aboutMe h3 {
+        color: white;
+        text-align: start;
+        font-size: 3em;
+        margin-bottom: 100px;
+        font-family: "Source Code Pro", monospace;
+        margin-left: 10px;
+    }
     .cardsContainer {
-        grid-template-columns: 300px 300px;
-        grid-template-rows: 300px 300px 300px;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3 auto);
+        place-items: center;
+        margin-bottom: 90px;
+        gap: 30px;
+    }
+
+    .tituloCards {
+        font-size: 1.3em;
+    }
+    .cards img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cards p {
+        font-size: 1.3em;
+    }
+
+    .cardTecnologia {
+        padding: 0px 10px 0px 10px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .parrafoTecnologia {
+        color: rgb(105, 105, 105);
+        text-align: start;
+        font-size: 1.3em;
+        padding: 3px;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .projects h3 {
+        font-size: 3em;
+        margin-left: 10px;
     }
 
     .cardWork {
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+
+    .cardWork:hover {
+        transform: scale(1.1);
+    }
+    .cards2Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .cards2Container .cardWork:first-child {
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+
+    .cards2Container .cardWork:nth-child(2) {
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .cards2Container .cardWork:last-child {
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+
+    .cardWork img {
+        width: auto;
+        height: auto;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    }
+
+    .cardWork p {
+        display: none;
+    }
+
+    .buttonWork a {
+        text-decoration: underline;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: "Source Code Pro", monospace;
+    }
+    .containerSYF {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerSocial {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .formContainer {
         width: 100%;
     }
-    /* Estilos para dispositivos móviles medianos */
+    #form {
+        width: 90%;
+        margin: auto;
+    }
+
+    textarea {
+        padding: 0;
+    }
+    input#name {
+        padding: 0;
+    }
+    input#email {
+        padding: 0;
+    }
+    .imgSocial {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        transition: filter 0.3s ease-in-out;
+        margin-top: 20px;
+    }
+
+    .contacto h3 {
+        margin-left: 10px;
+        /* Estilos para dispositivos móviles medianos */
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        grid-template-columns: 1fr;
+        margin-bottom: 150px;
+    }
+
+    .hero__content {
+        justify-content: center;
+        text-align: center;
+    }
+    .hero__content2 {
+        display: none;
+    }
+    .hero__content h1 {
+        font-size: 3em;
+        color: #fff;
+        font-family: "Source Code Pro", monospace;
+        text-align: center;
+        margin-left: 0;
+    }
+    .parrafoHero {
+        display: flex;
+        font-size: 30px;
+        width: 100%;
+        font-family: "Source Code Pro", monospace;
+        color: white;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .parrafoHero2 {
+        display: none;
+    }
+    .cambio-de-palabra {
+        line-height: 1.5;
+        font-size: 40px;
+        transition: transform 0.3s ease;
+        font-family: "Source Code Pro", monospace;
+        text-align: center;
+        margin-left: 0;
+    }
+    .cambio-de-palabra.hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+    }
+    .aboutMe h3 {
+        color: white;
+        text-align: start;
+        font-size: 3em;
+        margin-bottom: 100px;
+        font-family: "Source Code Pro", monospace;
+        margin-left: 10px;
+    }
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3 auto);
+        place-items: center;
+        margin-bottom: 90px;
+        gap: 30px;
+    }
+
+    .tituloCards {
+        font-size: 1.3em;
+    }
+    .cards img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cards p {
+        font-size: 1.3em;
+    }
+
+    .cardTecnologia {
+        padding: 0px 10px 0px 10px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .parrafoTecnologia {
+        color: rgb(105, 105, 105);
+        text-align: start;
+        font-size: 1.3em;
+        padding: 3px;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .projects h3 {
+        font-size: 3em;
+        margin-left: 10px;
+    }
+
+    .cardWork {
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+
+    .cardWork:hover {
+        transform: scale(1.1);
+    }
+    .cards2Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .cards2Container .cardWork:first-child {
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+
+    .cards2Container .cardWork:nth-child(2) {
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .cards2Container .cardWork:last-child {
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+
+    .cardWork img {
+        width: auto;
+        height: auto;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    }
+
+    .cardWork p {
+        display: none;
+    }
+
+    .buttonWork a {
+        text-decoration: underline;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: "Source Code Pro", monospace;
+    }
+    .containerSYF {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerSocial {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .formContainer {
+        width: 100%;
+    }
+    #form {
+        width: 90%;
+        margin: auto;
+    }
+
+    textarea {
+        padding: 0;
+    }
+    input#name {
+        padding: 0;
+    }
+    input#email {
+        padding: 0;
+    }
+    .imgSocial {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        transition: filter 0.3s ease-in-out;
+        margin-top: 20px;
+    }
+
+    .contacto h3 {
+        margin-left: 10px;
+        /* Estilos para dispositivos móviles medianos */
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+    .hero {
+        grid-template-columns: 1fr;
+        margin-bottom: 150px;
+    }
+
+    .hero__content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero__content h1 {
+        font-size: 3em;
+        color: #fff;
+        font-family: "Source Code Pro", monospace;
+        text-align: center;
+        margin-left: 0;
+    }
+    .parrafoHero {
+        display: flex;
+        width: 100%;
+        font-size: 30px;
+        font-family: "Source Code Pro", monospace;
+        color: white;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .parrafoHero2 {
+        display: none;
+    }
+    .cambio-de-palabra {
+        line-height: 1.5;
+        font-size: 40px;
+        transition: transform 0.3s ease;
+        font-family: "Source Code Pro", monospace;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .cardWork {
+        width: 60%;
+    }
+
+    .cards2Container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cards2Container .cardWork:first-child {
+        margin-left: 230px;
+    }
+
+    .cards2Container .cardWork:nth-child(2) {
+        margin-left: 30%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .cards2Container .cardWork:last-child {
+        margin-left: 345px;
+    }
+
+    .cardWork img {
+        width: 80%;
+        height: 100%;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    }
+
+    .cardWork p {
+        font-family: "Raleway", sans-serif;
+        color: white;
+        padding-left: 10px;
+        font-size: small;
+    }
 }
