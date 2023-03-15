@@ -621,7 +621,8 @@ label.stay {
     }
 
     .projects h3 {
-        font-size: 40px;
+       font-size: 3em;
+        margin-left: 10px;
     }
 
     .cardWork {
