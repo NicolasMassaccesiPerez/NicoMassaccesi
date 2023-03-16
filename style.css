@@ -1180,3 +1180,12 @@ label.stay {
         font-size: small;
     }
 }
+@media only screen and (min-height: 230px) and (orientation: landscape) {
+    .hero {
+        grid-template-columns: 1fr;
+        margin-bottom: 350px;
+    }
+    .aboutMe {
+        margin-bottom: 500px;
+    }
+}
