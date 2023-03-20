@@ -1103,7 +1103,7 @@ label.stay {
         /* Estilos para dispositivos móviles medianos */
     }
 }
-@media screen and (min-width: 1025px) and (max-width: 1600px) {
+/* @media screen and (min-width: 1025px) and (max-width: 1600px) {
     .hero {
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 150px;
@@ -1179,7 +1179,7 @@ label.stay {
         padding-left: 10px;
         font-size: small;
     }
-}
+} */
 @media only screen and (min-height: 230px) and (orientation: landscape) {
     .hero {
         grid-template-columns: 1fr;
