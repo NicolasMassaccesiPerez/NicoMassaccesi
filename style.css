@@ -8,10 +8,10 @@
 
 html {
     scroll-behavior: smooth;
-    width: calc(100vw - 16px);
 }
 body {
     background: linear-gradient(90deg, #3d3d3d, #03a9f4, #03a9f4, #3d3d3d);
+    width: calc(100vw - 16px);
 }
 
 /* ******************************************************************************************************** */
@@ -64,6 +64,7 @@ body {
 /* ***************************************************************************************************************************************************************************** */
 /* HERO*/
 .hero {
+    width: calc(100vw - 20px);
     display: flex;
     margin-top: 200px;
     margin-bottom: 250px;
@@ -253,7 +254,7 @@ button:active {
 }
 
 .tecnologiasContenedor {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -290,6 +291,10 @@ button:active {
     font-size: 1.8rem;
     padding: 20px;
 }
+.parrafoTecnologia2 {
+    display: none;
+}
+
 .tecnologiasImg {
     width: 80px;
     height: 80px;
@@ -603,8 +608,16 @@ label.stay {
     }
 
     .parrafoTecnologia {
-        font-size: 1em;
-        padding: 3px;
+        display: none;
+    }
+
+    .parrafoTecnologia2 {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: start;
+        font-family: "Source Code Pro", monospace;
+        font-size: 1.5rem;
+        padding: 50px;
     }
 
     .projects h3 {
