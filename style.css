@@ -246,20 +246,16 @@ button:active {
 }
 
 .cards p {
-    color: rgb(105, 105, 105);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Source Code Pro", monospace;
 }
 
 .tecnologiasContenedor {
     width: 100vw;
     display: flex;
     justify-content: center;
-    color: rgb(105, 105, 105);
-    text-align: start;
-    font-family: "Source Code Pro", monospace;
-    font-size: 2rem;
 }
 
 .cardTecnologia {
@@ -278,7 +274,22 @@ button:active {
 .cardTecnologia:hover {
     box-shadow: 10px 10px 80px rgba(255, 255, 255, 0.15);
 }
-
+.tituloCards2 {
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+    font-size: 2.5em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #03a9f4, #03a9f4);
+}
+.parrafoTecnologia {
+    color: rgb(255, 255, 255);
+    text-align: start;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.8rem;
+    padding: 20px;
+}
 .tecnologiasImg {
     width: 80px;
     height: 80px;
@@ -504,7 +515,7 @@ label.stay {
 
 /* ***************************************************************************** */
 /* Para dispositivos móviles pequeños (por ejemplo, iPhone 5) */
-@media screen and (min-width: 320px) and (max-width: 557px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
     .navbar {
         justify-content: center;
     }
@@ -555,8 +566,8 @@ label.stay {
     button {
         margin-top: 2em;
         width: 8em;
-        height: 3em;
-        font-size: 2em;
+        height: 2.5em;
+        font-size: 1.5em;
     }
 
     /******************************************************************************* */
@@ -592,9 +603,7 @@ label.stay {
     }
 
     .parrafoTecnologia {
-        color: rgb(105, 105, 105);
-        text-align: start;
-        font-size: 0.5em;
+        font-size: 1em;
         padding: 3px;
     }
 
@@ -755,15 +764,14 @@ label.stay {
     }
 
     .cardTecnologia {
-        padding: 0px 10px 0px 10px;
+        padding: 20px;
         margin: 0px 10px 0px 10px;
     }
-
+    .tituloCards2 {
+        margin: 20px;
+    }
     .parrafoTecnologia {
-        color: rgb(105, 105, 105);
-        text-align: start;
-        font-size: 0.5em;
-        padding: 3px;
+        font-size: 1em;
     }
 
     .projects h3 {
@@ -785,23 +793,6 @@ label.stay {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 10px;
-    }
-
-    .cards2Container .cardWork:first-child {
-        margin-left: 0px;
-        padding-bottom: 10px;
-    }
-
-    .cards2Container .cardWork:nth-child(2) {
-        padding-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-    }
-
-    .cards2Container .cardWork:last-child {
-        margin-left: 0px;
         padding-bottom: 10px;
     }
 
@@ -869,6 +860,9 @@ label.stay {
     .hero {
         margin-bottom: 200px;
     }
+    .hero__content {
+        width: 100%;
+    }
     .hero__content2 {
         display: none;
     }
@@ -921,15 +915,8 @@ label.stay {
     }
 
     .cardTecnologia {
-        padding: 0px 10px 0px 10px;
+        padding: 20px;
         margin: 0px 10px 0px 10px;
-    }
-
-    .parrafoTecnologia {
-        color: rgb(105, 105, 105);
-        text-align: start;
-        font-size: 0.5em;
-        padding: 3px;
     }
 
     .projects h3 {
@@ -1059,10 +1046,7 @@ label.stay {
         font-size: 1rem;
     }
     .parrafoTecnologia {
-        color: rgb(105, 105, 105);
-        text-align: start;
         font-size: 1em;
-        padding: 3px;
     }
 }
 @media only screen and (min-height: 230px) and (orientation: landscape) {
