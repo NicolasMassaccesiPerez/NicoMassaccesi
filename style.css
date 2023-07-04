@@ -67,6 +67,7 @@ body {
 .hero {
     display: flex;
     margin-top: 200px;
+    margin-bottom: 250px;
 }
 
 .hero__content {
@@ -190,6 +191,7 @@ button:active {
 /* SECTION ABOUT ME */
 .aboutMe {
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .aboutMe h3 {
@@ -224,7 +226,6 @@ button:active {
     align-items: center;
     flex-direction: column;
     transition: box-shadow 0.3s ease-in-out;
-    padding-top: 10px;
 }
 
 .cards:hover {
@@ -744,7 +745,7 @@ label.stay {
     }
     .cardsContainer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(3 auto);
         place-items: center;
         margin-bottom: 90px;
@@ -1039,22 +1040,10 @@ label.stay {
     }
 
     .cardWork p {
-        font-family: "Source Code Pro", monospace;
-
-        color: white;
         padding-left: 10px;
         font-size: 1rem;
     }
     .parrafoTecnologia {
         font-size: 1em;
-    }
-}
-@media only screen and (min-height: 230px) and (orientation: landscape) {
-    .hero {
-        grid-template-columns: 1fr;
-        margin-bottom: 350px;
-    }
-    .aboutMe {
-        margin-bottom: 500px;
     }
 }
