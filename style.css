@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
-body {
-    height: 100vh;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
     overflow-x: hidden;
-    background-color: #00004d;
+    width: 100vw;
+}
+body {
+    margin: 0;
+    background: linear-gradient(90deg, #3d3d3d, #03a9f4, #03a9f4, #3d3d3d);
 }
 
 /* ******************************************************************************************************** */
@@ -11,7 +20,7 @@ body {
 /*navbar*/
 .navbar {
     width: 100vw;
-    height: 50px;
+    height: 80px;
     position: fixed;
     top: 0px;
     display: flex;
@@ -56,9 +65,8 @@ body {
 /* ***************************************************************************************************************************************************************************** */
 /* HERO*/
 .hero {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    margin-top: 200px;
 }
 
 .hero__content {
@@ -66,12 +74,17 @@ body {
     flex-direction: column;
     justify-content: center;
     color: white;
+    width: 70%;
 }
 
 .hero__content2 {
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 30%;
+}
+
+.hero__content2__img {
+    width: 100%;
 }
 
 .hero__content h1 {
@@ -79,36 +92,35 @@ body {
     margin-bottom: 10px;
     color: #fff;
     font-family: "Source Code Pro", monospace;
-    margin-top: 50px;
-    margin-left: 100px;
+    padding-left: 3.125rem;
     text-align: start;
 }
 
 .cambio-de-palabra {
-    font-size: 4em;
+    font-size: 5em;
     transition: transform 0.3s ease;
     font-family: "Source Code Pro", monospace;
     line-height: 1px;
-    margin-left: 100px;
+    padding-left: 3.125rem;
 }
 .cambio-de-palabra.hover {
     cursor: pointer;
     transform: translateY(-10px);
 }
 .parrafoHero {
-    font-size: 30px;
+    font-size: 2.5em;
     width: 80%;
-    height: auto;
     font-family: "Source Code Pro", monospace;
     color: white;
-    margin-left: 100px;
+    padding: 50px;
+    margin: 0;
 }
-.parrafoHero2 {
-    display: none;
-}
+
 .buttons {
     display: flex;
-    justify-content: center; /* para centrar horizontalmente */
+    justify-content: start; /* para centrar horizontalmente */
+    margin-left: 20%;
+
     gap: 10px; /* para centrar verticalmente */
 }
 
@@ -123,18 +135,18 @@ button {
     text-decoration: none;
     position: relative;
     border: none;
-    font-size: 14px;
+    font-size: 2rem;
     font-family: inherit;
     color: #fff;
     width: 10em;
     height: 4em;
     line-height: 2em;
     text-align: center;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background: linear-gradient(90deg, #292929, #03a9f4, #292929);
     background-size: 300%;
     border-radius: 30px;
     z-index: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: "Source Code Pro", monospace;
 }
 
 button:hover {
@@ -177,8 +189,7 @@ button:active {
 /****************************************************************************************/
 /* SECTION ABOUT ME */
 .aboutMe {
-    width: 100vw;
-    height: auto;
+    width: 100%;
 }
 
 .aboutMe h3 {
@@ -193,18 +204,17 @@ button:active {
 
 .cardsContainer {
     width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-bottom: 90px;
+    margin-bottom: 80px;
 }
 
 .cards {
-    width: 300px;
+    width: 100%;
     height: 300px;
     background-color: #202020;
     border-radius: 5px;
@@ -227,7 +237,7 @@ button:active {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
+    background-image: linear-gradient(90deg, #03a9f4, #03a9f4);
 }
 .cards img {
     width: 50px;
@@ -243,25 +253,24 @@ button:active {
 
 .tecnologiasContenedor {
     width: 100vw;
-    height: 80vh;
-
     display: flex;
     justify-content: center;
     color: rgb(105, 105, 105);
     text-align: start;
-    font-family: "Raleway", sans-serif;
+    font-family: "Source Code Pro", monospace;
+    font-size: 2rem;
 }
 
 .cardTecnologia {
-    width: 1000px;
-    height: 500px;
+    width: 80%;
+    height: auto;
     background-color: #202020;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 50px 50px 50px;
     transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -284,6 +293,7 @@ button:active {
 /*SECTION PROYECTOS*/
 .projects {
     margin-bottom: 200px;
+    width: 100vw;
 }
 .projects h3 {
     color: white;
@@ -296,53 +306,44 @@ button:active {
 }
 
 .cardWork {
-    width: 50%;
-    height: 300px;
+    width: 800px;
     background-color: #202020;
     border-radius: 5px;
     transition: box-shadow 0.3s ease-in-out;
     margin-bottom: 10px;
     display: flex;
+    flex-direction: column;
 }
 
 .cardWork:hover {
     box-shadow: 10px 10px 80px rgba(255, 255, 255, 0.15);
-    transform: scale(1.3);
+    transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
 .cards2Container {
     display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.cards2Container .cardWork:first-child {
-    margin-left: 230px;
-}
-
-.cards2Container .cardWork:nth-child(2) {
-    margin-left: 40%;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.cards2Container .cardWork:last-child {
-    margin-left: 345px;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardWork img {
-    width: auto;
-    height: 100%;
+    width: 100%;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
 }
 
 .cardWork p {
-    font-family: "Raleway", sans-serif;
+    font-family: "Source Code Pro", monospace;
     color: white;
     padding-left: 10px;
-    font-size: small;
+    font-size: 1rem;
+    padding-bottom: 10px;
 }
 
+.div-proyectos {
+    padding-bottom: 10px;
+}
 .buttonWork a {
     text-decoration: underline;
     width: 100%;
@@ -465,7 +466,7 @@ label.stay {
 
 #submit:hover {
     transition: background-color 1s ease;
-    background-image: linear-gradient(90deg, #03a9f4, #f441a5, #03a9f4);
+    background-image: linear-gradient(90deg, #292929, #03a9f4, #292929);
     color: #ffffff;
 }
 
@@ -502,73 +503,59 @@ label.stay {
 
 /* ***************************************************************************** */
 /* Para dispositivos móviles pequeños (por ejemplo, iPhone 5) */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    body {
-        overflow-x: hidden;
-    }
-
+@media screen and (min-width: 320px) and (max-width: 501px) {
     .navbar {
-        height: 50px;
-        position: fixed;
-        top: 0px;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        background-color: transparent;
-        transition: background-color 0.5s ease;
-        z-index: 5;
-        margin: 0;
-    }
-    .links {
-        color: rgb(253, 253, 253);
-        text-decoration: none;
-        font-size: 0.7em;
-        display: inline-block;
-        font-family: "Raleway", sans-serif;
-    }
-    /*Primer SECTION*/
-    .hero {
-        grid-template-columns: 1fr;
-        margin-bottom: 150px;
     }
 
+    .links {
+        font-size: 0.8em;
+    }
+
+    /*Primer SECTION*/
+
+    .hero {
+        margin-top: 170px;
+        margin-bottom: 250px;
+    }
     .hero__content {
-        justify-content: center;
-        text-align: center;
+        width: 100%;
+        height: fit-content;
     }
     .hero__content2 {
         display: none;
     }
     .hero__content h1 {
-        font-size: 3em;
-        color: #fff;
-        font-family: "Source Code Pro", monospace;
-        text-align: center;
-        margin-left: 0;
-    }
-    .parrafoHero {
-        display: none;
+        font-size: 2.3em;
+        text-align: start;
+        padding: 0 0 0 0.625rem;
+        margin: 0;
     }
 
-    .parrafoHero2 {
-        display: flex;
-        font-size: 30px;
-        font-family: "Source Code Pro", monospace;
-        color: white;
-        text-align: center;
-        margin-left: 0;
+    .parrafoHero {
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: start;
+        padding: 0 0.625rem 0 0.625rem;
+        margin: 0;
     }
+
     .cambio-de-palabra {
-        line-height: 1.5;
-        font-size: 40px;
-        transition: transform 0.3s ease;
-        font-family: "Source Code Pro", monospace;
-        text-align: center;
-        margin-left: 0;
+        font-size: 2rem;
+        text-align: start;
+        width: 100%;
+        padding: 0 0 0 0.625rem;
+        margin-bottom: 2em;
     }
     .cambio-de-palabra.hover {
         cursor: pointer;
         transform: translateY(-10px);
+    }
+    button {
+        margin-top: 2em;
+        width: 8em;
+        height: 3em;
+        font-size: 2em;
     }
 
     /******************************************************************************* */
@@ -603,17 +590,11 @@ label.stay {
         font-size: 1em;
     }
 
-    .cardTecnologia {
-        padding: 0px 10px 0px 10px;
-        margin: 0px 10px 0px 10px;
-    }
-
     .parrafoTecnologia {
         color: rgb(105, 105, 105);
         text-align: start;
-        font-size: 1em;
+        font-size: 0.5em;
         padding: 3px;
-        font-family: "Raleway", sans-serif;
     }
 
     .projects h3 {
@@ -625,38 +606,6 @@ label.stay {
         width: 90%;
         margin-bottom: 10px;
         flex-direction: column;
-    }
-
-    .cardWork:hover {
-        transform: scale(1.1);
-    }
-    .cards2Container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cards2Container .cardWork:first-child {
-        margin-left: 0px;
-        padding-bottom: 10px;
-    }
-
-    .cards2Container .cardWork:nth-child(2) {
-        padding-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-    }
-
-    .cards2Container .cardWork:last-child {
-        margin-left: 0px;
-        padding-bottom: 10px;
-    }
-
-    .cardWork img {
-        width: auto;
-        height: auto;
-        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
     }
 
     .cardWork p {
@@ -730,49 +679,50 @@ label.stay {
 }
 
 /* Para dispositivos móviles medianos (por ejemplo, iPhone 6/7/8) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
     .hero {
-        grid-template-columns: 1fr;
-        margin-bottom: 150px;
+        margin-top: 170px;
+        margin-bottom: 250px;
     }
-
     .hero__content {
-        justify-content: center;
-        text-align: center;
+        width: 100%;
+        height: fit-content;
     }
     .hero__content2 {
         display: none;
     }
     .hero__content h1 {
-        font-size: 3em;
-        color: #fff;
-        font-family: "Source Code Pro", monospace;
-        text-align: center;
-        margin-left: 0;
-    }
-    .parrafoHero {
-        display: none;
+        font-size: 2.8em;
+        text-align: start;
+        padding: 0 0 0 0.625rem;
+        margin: 0;
     }
 
-    .parrafoHero2 {
-        display: flex;
-        font-size: 30px;
-        font-family: "Source Code Pro", monospace;
-        color: white;
-        text-align: center;
-        margin-left: 0;
+    .parrafoHero {
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: start;
+        padding: 0 0 0 0.625rem;
+        margin: 0;
     }
+
     .cambio-de-palabra {
-        line-height: 1.5;
-        font-size: 40px;
-        transition: transform 0.3s ease;
-        font-family: "Source Code Pro", monospace;
-        text-align: center;
-        margin-left: 0;
+        font-size: 2.8rem;
+        text-align: start;
+        width: 100%;
+        padding: 0 0 0 0.625rem;
+        margin-bottom: 2em;
     }
     .cambio-de-palabra.hover {
         cursor: pointer;
         transform: translateY(-10px);
+    }
+    button {
+        margin-top: 4em;
+
+        width: 8em;
+        height: 3em;
+        font-size: 2em;
     }
     .aboutMe h3 {
         color: white;
@@ -811,9 +761,8 @@ label.stay {
     .parrafoTecnologia {
         color: rgb(105, 105, 105);
         text-align: start;
-        font-size: 1.3em;
+        font-size: 0.5em;
         padding: 3px;
-        font-family: "Raleway", sans-serif;
     }
 
     .projects h3 {
@@ -917,44 +866,25 @@ label.stay {
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .hero {
-        grid-template-columns: 1fr;
-        margin-bottom: 150px;
-    }
-
-    .hero__content {
-        justify-content: center;
-        text-align: center;
+        margin-bottom: 200px;
     }
     .hero__content2 {
         display: none;
     }
     .hero__content h1 {
         font-size: 3em;
-        color: #fff;
-        font-family: "Source Code Pro", monospace;
-        text-align: center;
-        margin-left: 0;
+        text-align: start;
     }
     .parrafoHero {
-        display: flex;
-        font-size: 30px;
+        font-size: 2rem;
         width: 100%;
-        font-family: "Source Code Pro", monospace;
-        color: white;
-        text-align: center;
-        margin-left: 0;
+        text-align: start;
     }
 
-    .parrafoHero2 {
-        display: none;
-    }
     .cambio-de-palabra {
-        line-height: 1.5;
-        font-size: 40px;
-        transition: transform 0.3s ease;
-        font-family: "Source Code Pro", monospace;
-        text-align: center;
-        margin-left: 0;
+        font-size: 3em;
+
+        text-align: start;
     }
     .cambio-de-palabra.hover {
         cursor: pointer;
@@ -997,9 +927,8 @@ label.stay {
     .parrafoTecnologia {
         color: rgb(105, 105, 105);
         text-align: start;
-        font-size: 1.3em;
+        font-size: 0.5em;
         padding: 3px;
-        font-family: "Raleway", sans-serif;
     }
 
     .projects h3 {
@@ -1101,83 +1030,40 @@ label.stay {
         /* Estilos para dispositivos móviles medianos */
     }
 }
-/* @media screen and (min-width: 1025px) and (max-width: 1600px) {
-    .hero {
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 150px;
-    }
-
-    .hero__content {
-        justify-content: center;
-        text-align: center;
-    }
-
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
     .hero__content h1 {
-        font-size: 3em;
-        color: #fff;
-        font-family: "Source Code Pro", monospace;
-        text-align: center;
-        margin-left: 0;
+        font-size: 4em;
     }
+
+    .cambio-de-palabra {
+        font-size: 4em;
+    }
+
     .parrafoHero {
-        display: flex;
-        width: 100%;
-        font-size: 30px;
+        font-size: 1.5em;
+        width: 80%;
         font-family: "Source Code Pro", monospace;
         color: white;
-        text-align: center;
-        margin-left: 0;
+        padding: 50px;
     }
-
     .parrafoHero2 {
         display: none;
     }
-    .cambio-de-palabra {
-        line-height: 1.5;
-        font-size: 40px;
-        transition: transform 0.3s ease;
-        font-family: "Source Code Pro", monospace;
-        text-align: center;
-        margin-left: 0;
-    }
-
-    .cardWork {
-        width: 60%;
-    }
-
-    .cards2Container {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .cards2Container .cardWork:first-child {
-        margin-left: 230px;
-    }
-
-    .cards2Container .cardWork:nth-child(2) {
-        margin-left: 30%;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .cards2Container .cardWork:last-child {
-        margin-left: 345px;
-    }
-
-    .cardWork img {
-        width: 80%;
-        height: 100%;
-        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
-    }
 
     .cardWork p {
-        font-family: "Raleway", sans-serif;
+        font-family: "Source Code Pro", monospace;
+
         color: white;
         padding-left: 10px;
-        font-size: small;
+        font-size: 1rem;
     }
-} */
+    .parrafoTecnologia {
+        color: rgb(105, 105, 105);
+        text-align: start;
+        font-size: 0.5em;
+        padding: 3px;
+    }
+}
 @media only screen and (min-height: 230px) and (orientation: landscape) {
     .hero {
         grid-template-columns: 1fr;
