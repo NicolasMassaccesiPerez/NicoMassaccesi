@@ -394,34 +394,38 @@ fieldset {
 
 input {
     font-size: 1.2em;
-    width: 100%;
+    width: 80%;
     height: 50px;
-    border: 1px solid #aaa;
-    border-radius: 2px;
+    border: 2px solid #000000;
+    border-radius: 5px;
     padding: 1.5em 1em 0.8em 1em;
     background: transparent;
-    color: #3b3b3b;
+    color: #ffffff;
+    margin: 10px;
+    font-family: "Source Code Pro", monospace;
 }
 
 input:focus {
     outline: none;
     background: transparent;
+    font-family: "Source Code Pro", monospace;
 }
 
 input + label {
     display: block;
     cursor: text;
-    color: #ebe3e3;
+    color: #ffffff;
     transition: 0.15s ease-out all;
     position: absolute;
-    top: 40%;
-    left: 5%;
+    top: 0;
+    left: 0;
+    font-family: "Source Code Pro", monospace;
 }
 
 input:focus + label,
 label.stay {
-    top: 2em;
-    left: 3em;
+    top: 0;
+    left: 0;
     font-weight: bold;
     font-size: 0.7em;
     color: #ffffff;
@@ -430,14 +434,16 @@ label.stay {
 
 textarea {
     font-size: 1.2em;
-    width: 101%;
+    width: 80%;
     height: 200px;
-    border: 1px solid #aaa;
-    border-radius: 2px;
+    border: 2px solid #000000;
+    border-radius: 5px;
     padding: 2.5em 1em 0.8em 1em;
     background: transparent;
     outline: none;
-    color: #777;
+    color: #fffefe;
+    margin: 10px;
+    font-family: "Source Code Pro", monospace;
 }
 
 textarea:focus {
@@ -448,18 +454,19 @@ textarea:focus {
 textarea + label {
     display: block;
     cursor: text;
-    color: #777;
+    color: #ffffff;
     transition: 0.15s ease-out all;
     position: absolute;
-    top: 40%;
-    left: 5%;
+    top: 0;
+    left: 0;
+    font-family: "Source Code Pro", monospace;
 }
 
 textarea:focus + label,
 label.stay {
-    top: 2em;
-    left: 3em;
-    font-family: "Raleway", sans-serif;
+    top: 0;
+    left: 0;
+    font-family: "Source Code Pro", monospace;
     font-weight: bold;
     font-size: 0.7em;
     color: #fcfbfb;
@@ -467,7 +474,7 @@ label.stay {
 }
 
 #submit {
-    border: 1px solid #ffffff;
+    border: 3px solid #000000;
     border-radius: 300px;
     width: 20%;
     outline: none;
@@ -477,7 +484,7 @@ label.stay {
     margin-top: 15px;
     font-family: "Raleway", sans-serif;
     font-weight: 100px;
-    color: #777;
+    color: #ffffff;
     padding: 10px;
 }
 
@@ -498,15 +505,14 @@ label.stay {
 }
 
 .imgSocial {
-    width: 100px;
-    height: 100px;
+    width: 80px;
     display: flex;
     flex-direction: column;
     transition: filter 0.3s ease-in-out;
 }
 
 .imgSocial:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
     filter: drop-shadow(10px 10px 80px rgba(255, 255, 255, 0.15));
 }
@@ -516,6 +522,10 @@ label.stay {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.containerSocial {
+    min-height: 200px;
 }
 
 /* ***************************************************************************** */
