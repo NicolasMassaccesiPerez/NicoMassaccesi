@@ -22,7 +22,7 @@ body {
 /*navbar*/
 .navbar {
     width: 100vw;
-    height: 80px;
+    height: 100px;
     position: fixed;
     top: 0px;
     display: flex;
@@ -513,7 +513,6 @@ label.stay {
 
 .imgSocial {
     width: 80px;
-
     transition: filter 0.3s ease-in-out;
 }
 
@@ -719,6 +718,12 @@ label.stay {
     input#email {
         padding: 0;
     }
+    .containerSocial {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Para dispositivos móviles medianos (por ejemplo, iPhone 6/7/8) */
@@ -854,8 +859,9 @@ label.stay {
         align-items: center;
     }
     .containerSocial {
-        width: 100%;
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
     }
     .formContainer {
@@ -974,23 +980,6 @@ label.stay {
         padding-bottom: 10px;
     }
 
-    .cards2Container .cardWork:first-child {
-        margin-left: 0px;
-        padding-bottom: 10px;
-    }
-
-    .cards2Container .cardWork:nth-child(2) {
-        padding-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-    }
-
-    .cards2Container .cardWork:last-child {
-        margin-left: 0px;
-        padding-bottom: 10px;
-    }
-
     .cardWork img {
         width: auto;
         height: auto;
@@ -1016,8 +1005,9 @@ label.stay {
         align-items: center;
     }
     .containerSocial {
-        width: 100%;
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
     }
     .formContainer {
